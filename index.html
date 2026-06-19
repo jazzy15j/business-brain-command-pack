@@ -1,31 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<html lang="en" data-scribe-recorder-ready="true" class="brand-refresh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Business Brain Command Pack — JDesigns Strategist LLC</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --gold: #f5a31a;
-      --gold-light: #ffd26b;
-      --gold-dim: rgba(245,163,26,.15);
-      --gold-faint: rgba(245,163,26,.07);
-      --purple: #7c3aed;
-      --purple-light: #a855f7;
-      --green: #10b981;
+      --green: #2ec27e;
+      --green-dim: rgba(46,194,126,.15);
+      --green-faint: rgba(46,194,126,.07);
+      --green-glow: #0d3320;
       --red: #ef4444;
-      --bg: #080810;
-      --card: #0d0d1a;
-      --border: rgba(255,255,255,.07);
-      --border-gold: rgba(245,163,26,.2);
-      --text: #f0f0f8;
-      --muted: #8888aa;
-      --faint: #444460;
+      --bg: #07100a;
+      --card: #0d1a10;
+      --border: rgba(30,50,37,0.6);
+      --border-green: rgba(46,194,126,.2);
+      --text: #ffffff;
+      --muted: #8aab96;
+      --faint: #1e3225;
     }
 
     html { scroll-behavior: smooth; }
@@ -33,7 +26,7 @@
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'Inter', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-size: 16px;
       line-height: 1.65;
       overflow-x: hidden;
@@ -65,7 +58,7 @@
       height: 64px;
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 2rem;
-      background: rgba(8,8,16,.92);
+      background: rgba(7,16,10,.92);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
@@ -79,14 +72,14 @@
     .nav-mark {
       width: 34px; height: 34px;
       border-radius: 9px;
-      background: var(--gold);
+      background: var(--green);
       display: flex; align-items: center; justify-content: center;
-      font-size: .88rem; font-weight: 900; color: #080810;
+      font-size: .88rem; font-weight: 900; color: #07100a;
       letter-spacing: -.02em; flex-shrink: 0;
     }
 
     .nav-wordmark { font-size: .88rem; font-weight: 700; color: var(--text); }
-    .nav-wordmark span { color: var(--gold); }
+    .nav-wordmark span { color: var(--green); }
 
     .nav-links { display: flex; align-items: center; gap: 1.75rem; list-style: none; }
 
@@ -98,8 +91,8 @@
     .nav-links a:hover { color: var(--text); }
 
     .nav-cta {
-      background: var(--gold) !important;
-      color: #080810 !important;
+      background: var(--green) !important;
+      color: #07100a !important;
       padding: .4rem 1rem; border-radius: 7px;
       font-weight: 700 !important;
       transition: opacity .2s !important;
@@ -119,30 +112,30 @@
       position: absolute; top: -15%; left: 50%;
       transform: translateX(-50%);
       width: 950px; height: 600px;
-      background: radial-gradient(ellipse, rgba(245,163,26,.13) 0%, transparent 65%);
+      background: radial-gradient(ellipse, rgba(46,194,126,.13) 0%, transparent 65%);
       pointer-events: none;
     }
 
     .orb-2 {
       position: absolute; bottom: -5%; left: 10%;
       width: 500px; height: 400px;
-      background: radial-gradient(ellipse, rgba(124,58,237,.08) 0%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(46,194,126,.08) 0%, transparent 70%);
       pointer-events: none;
     }
 
     .hero-badge {
       display: inline-flex; align-items: center; gap: .5rem;
-      background: var(--gold-faint);
-      border: 1px solid var(--border-gold);
+      background: var(--green-faint);
+      border: 1px solid var(--border-green);
       border-radius: 100px; padding: .35rem 1.1rem;
       font-size: .72rem; font-weight: 700;
       letter-spacing: .12em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 2rem;
+      color: var(--green); margin-bottom: 2rem;
     }
 
     .badge-dot {
       width: 7px; height: 7px; border-radius: 50%;
-      background: var(--gold);
+      background: var(--green);
       animation: pulse 2s ease infinite;
     }
 
@@ -153,8 +146,8 @@
       max-width: 920px; margin-bottom: 1.5rem;
     }
 
-    .text-gold {
-      background: linear-gradient(135deg, #f5a31a 0%, #ffd26b 45%, #f5a31a 100%);
+    .text-green {
+      background: linear-gradient(135deg, #2ec27e 0%, #6edba8 45%, #2ec27e 100%);
       background-size: 200% auto;
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -176,14 +169,14 @@
     .cmd-pill {
       font-family: 'Courier New', monospace;
       font-size: .8rem; font-weight: 700;
-      color: var(--gold); background: var(--gold-faint);
-      border: 1px solid var(--border-gold);
+      color: var(--green); background: var(--green-faint);
+      border: 1px solid var(--border-green);
       border-radius: 100px; padding: .38rem 1rem;
       transition: background .2s, border-color .2s, transform .15s;
     }
     .cmd-pill:hover {
-      background: var(--gold-dim);
-      border-color: rgba(245,163,26,.4);
+      background: var(--green-dim);
+      border-color: rgba(46,194,126,.4);
       transform: translateY(-2px);
     }
 
@@ -199,10 +192,10 @@
       padding: .85rem 1.9rem; transition: all .2s;
       letter-spacing: -.01em;
     }
-    .btn-gold { background: var(--gold); color: #080810; }
-    .btn-gold:hover {
+    .btn-green { background: var(--green); color: #07100a; }
+    .btn-green:hover {
       opacity: .9; transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(245,163,26,.3);
+      box-shadow: 0 8px 32px rgba(46,194,126,.3);
     }
     .btn-outline {
       background: transparent; color: var(--text);
@@ -223,7 +216,7 @@
     .stat-item:last-child { border-right: none; }
     .stat-num {
       font-size: 1.9rem; font-weight: 900;
-      letter-spacing: -.03em; color: var(--gold);
+      letter-spacing: -.03em; color: var(--green);
       line-height: 1; margin-bottom: .3rem;
     }
     .stat-label { font-size: .7rem; color: var(--muted); font-weight: 500; line-height: 1.35; }
@@ -235,7 +228,7 @@
     .eyebrow {
       font-size: .72rem; font-weight: 700;
       letter-spacing: .14em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: .75rem;
+      color: var(--green); margin-bottom: .75rem;
     }
 
     h2 {
@@ -266,15 +259,15 @@
       text-align: center;
       transition: border-color .3s, transform .2s;
     }
-    .flow-card:hover { border-color: var(--border-gold); transform: translateY(-4px); }
+    .flow-card:hover { border-color: var(--border-green); transform: translateY(-4px); }
 
     .flow-icon { font-size: 2.5rem; display: block; margin-bottom: .9rem; }
 
     .flow-num {
       display: inline-flex; align-items: center; justify-content: center;
       width: 28px; height: 28px; border-radius: 50%;
-      background: var(--gold-dim); border: 1px solid var(--border-gold);
-      color: var(--gold); font-size: .78rem; font-weight: 800;
+      background: var(--green-dim); border: 1px solid var(--border-green);
+      color: var(--green); font-size: .78rem; font-weight: 800;
       margin-bottom: .9rem;
     }
 
@@ -282,7 +275,7 @@
     .flow-card p { font-size: .87rem; color: var(--muted); line-height: 1.65; }
 
     .flow-arrow {
-      font-size: 1.4rem; color: var(--gold);
+      font-size: 1.4rem; color: var(--green);
       padding: 0 1.25rem; opacity: .45;
     }
 
@@ -302,11 +295,11 @@
     .cmd-card::after {
       content: '';
       position: absolute; top: 0; left: 0; right: 0; height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      background: linear-gradient(90deg, transparent, var(--green), transparent);
       opacity: 0; transition: opacity .3s;
     }
     .cmd-card:hover {
-      border-color: rgba(245,163,26,.3);
+      border-color: rgba(46,194,126,.3);
       transform: translateY(-3px);
       box-shadow: 0 16px 48px rgba(0,0,0,.4);
     }
@@ -318,21 +311,21 @@
     .cmd-name {
       font-family: 'Courier New', monospace;
       font-size: .97rem; font-weight: 700;
-      color: var(--gold); margin-bottom: .2rem;
+      color: var(--green); margin-bottom: .2rem;
     }
     .cmd-tagline { font-size: .82rem; color: var(--text); font-weight: 600; }
     .cmd-desc { font-size: .87rem; color: var(--muted); line-height: 1.65; margin-bottom: 1.1rem; }
 
     .cmd-result {
-      background: rgba(245,163,26,.06);
-      border: 1px solid rgba(245,163,26,.15);
+      background: rgba(46,194,126,.06);
+      border: 1px solid rgba(46,194,126,.15);
       border-radius: 10px; padding: .85rem 1rem;
-      font-size: .8rem; color: rgba(245,163,26,.88); line-height: 1.6;
+      font-size: .8rem; color: rgba(46,194,126,.88); line-height: 1.6;
     }
     .cmd-result-label {
       font-size: .63rem; font-weight: 700;
       letter-spacing: .1em; text-transform: uppercase;
-      color: var(--gold); opacity: .65; margin-bottom: .35rem;
+      color: var(--green); opacity: .65; margin-bottom: .35rem;
     }
 
     /* ── TIMELINE ── */
@@ -342,7 +335,7 @@
     .timeline::before {
       content: '';
       position: absolute; left: 10px; top: 14px; bottom: 14px; width: 2px;
-      background: linear-gradient(180deg, var(--gold) 0%, rgba(245,163,26,.08) 100%);
+      background: linear-gradient(180deg, var(--green) 0%, rgba(46,194,126,.08) 100%);
     }
     .tl-entry {
       position: relative; margin-bottom: 2rem;
@@ -350,14 +343,14 @@
       border-radius: 16px; padding: 1.5rem 1.75rem;
       transition: border-color .3s;
     }
-    .tl-entry:hover { border-color: rgba(245,163,26,.25); }
+    .tl-entry:hover { border-color: rgba(46,194,126,.25); }
     .tl-dot {
       position: absolute; left: -3rem; top: 1.4rem;
       width: 22px; height: 22px; border-radius: 50%;
-      background: var(--bg); border: 2px solid var(--gold);
+      background: var(--bg); border: 2px solid var(--green);
       display: flex; align-items: center; justify-content: center;
     }
-    .tl-dot-inner { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); }
+    .tl-dot-inner { width: 9px; height: 9px; border-radius: 50%; background: var(--green); }
     .tl-time {
       font-size: .7rem; font-weight: 700;
       letter-spacing: .1em; text-transform: uppercase;
@@ -366,7 +359,7 @@
     .tl-cmd {
       font-family: 'Courier New', monospace;
       font-size: 1rem; font-weight: 700;
-      color: var(--gold); margin-bottom: .3rem;
+      color: var(--green); margin-bottom: .3rem;
     }
     .tl-desc { font-size: .88rem; color: var(--muted); line-height: 1.65; }
 
@@ -377,7 +370,7 @@
     }
     .bva-col { background: var(--card); border-radius: 18px; padding: 2rem; }
     .bva-col.before { border: 1px solid rgba(239,68,68,.2); }
-    .bva-col.after  { border: 1px solid rgba(16,185,129,.25); }
+    .bva-col.after  { border: 1px solid rgba(46,194,126,.25); }
 
     .bva-label {
       font-size: .72rem; font-weight: 700;
@@ -397,19 +390,19 @@
       font-size: .7rem; flex-shrink: 0; margin-top: 1px;
     }
     .before .bva-icon { background: rgba(239,68,68,.12); color: var(--red); }
-    .after  .bva-icon { background: rgba(16,185,129,.12); color: var(--green); }
+    .after  .bva-icon { background: rgba(46,194,126,.12); color: var(--green); }
 
     /* ── JASMINE NOTE ── */
     .jasmine-card {
       background: var(--card);
-      border: 1px solid var(--border-gold);
+      border: 1px solid var(--border-green);
       border-radius: 22px; padding: 3rem 2.75rem;
       position: relative; overflow: hidden;
     }
     .jasmine-card::before {
       content: '';
       position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, var(--purple), var(--gold), var(--purple));
+      background: linear-gradient(90deg, var(--green), var(--green), var(--green));
     }
     .jasmine-quote {
       font-size: 1.15rem; font-weight: 400;
@@ -417,14 +410,14 @@
       margin-bottom: 1.75rem; font-style: italic;
       max-width: 700px;
     }
-    .jasmine-quote em { font-style: normal; color: var(--gold); font-weight: 600; }
+    .jasmine-quote em { font-style: normal; color: var(--green); font-weight: 600; }
 
     .jasmine-sig { display: flex; align-items: center; gap: 1rem; }
     .jasmine-mark {
       width: 46px; height: 46px; border-radius: 12px;
-      background: var(--gold);
+      background: var(--green);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.15rem; font-weight: 900; color: #080810; flex-shrink: 0;
+      font-size: 1.15rem; font-weight: 900; color: #07100a; flex-shrink: 0;
     }
     .jasmine-name { font-weight: 700; font-size: .97rem; color: var(--text); margin-bottom: .1rem; }
     .jasmine-title { font-size: .82rem; color: var(--muted); }
@@ -439,16 +432,16 @@
       border-radius: 16px; padding: 1.75rem;
       transition: border-color .3s, transform .2s;
     }
-    .req-card:hover { border-color: var(--border-gold); transform: translateY(-3px); }
+    .req-card:hover { border-color: var(--border-green); transform: translateY(-3px); }
     .req-icon { font-size: 1.75rem; margin-bottom: .9rem; display: block; }
     .req-card h3 { font-size: .97rem; font-weight: 700; margin-bottom: .45rem; }
     .req-card p { font-size: .85rem; color: var(--muted); line-height: 1.65; }
-    .req-card a { color: var(--gold); text-decoration: none; }
+    .req-card a { color: var(--green); text-decoration: none; }
     .req-card a:hover { text-decoration: underline; }
 
     /* ── TERMINAL ── */
     .terminal {
-      background: #060610;
+      background: #040e08;
       border: 1px solid rgba(255,255,255,.1);
       border-radius: 14px; overflow: hidden; margin-bottom: 1.5rem;
     }
@@ -469,7 +462,7 @@
       font-size: .85rem; line-height: 1.9; color: #9090b8; overflow-x: auto;
     }
     .t-comment { color: var(--faint); }
-    .t-gold { color: var(--gold); font-weight: 600; }
+    .t-gold { color: var(--green); font-weight: 600; }
     .t-prompt { color: var(--faint); }
 
     .os-label {
@@ -481,20 +474,20 @@
     /* ── CTA ── */
     .cta-card {
       background: var(--card);
-      border: 1px solid rgba(245,163,26,.25);
+      border: 1px solid rgba(46,194,126,.25);
       border-radius: 24px; padding: 4.5rem 3rem;
       text-align: center; position: relative; overflow: hidden;
     }
     .cta-card::before {
       content: '';
       position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      background: linear-gradient(90deg, transparent, var(--green), transparent);
     }
     .cta-card::after {
       content: '';
       position: absolute; top: -60px; left: 50%; transform: translateX(-50%);
       width: 600px; height: 350px;
-      background: radial-gradient(ellipse, rgba(245,163,26,.1) 0%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(46,194,126,.1) 0%, transparent 70%);
       pointer-events: none;
     }
     .cta-card h2 {
@@ -521,9 +514,9 @@
     .footer-brand { display: flex; align-items: center; gap: .6rem; margin-bottom: .6rem; }
     .footer-mark {
       width: 30px; height: 30px; border-radius: 8px;
-      background: var(--gold);
+      background: var(--green);
       display: flex; align-items: center; justify-content: center;
-      font-size: .8rem; font-weight: 900; color: #080810;
+      font-size: .8rem; font-weight: 900; color: #07100a;
     }
     .footer-name { font-weight: 700; font-size: .88rem; color: var(--text); }
     .footer-tagline { font-size: .8rem; color: var(--muted); font-style: italic; margin-bottom: .45rem; }
@@ -531,7 +524,7 @@
 
     .footer-links { display: flex; flex-direction: column; gap: .5rem; text-align: right; }
     .footer-links a { color: var(--muted); text-decoration: none; font-size: .85rem; transition: color .2s; }
-    .footer-links a:hover { color: var(--gold); }
+    .footer-links a:hover { color: var(--green); }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
@@ -561,6 +554,91 @@
       .section { padding: 3.5rem 1.25rem; }
       .jasmine-card { padding: 2rem 1.5rem; }
     }
+
+    /* ── SAMPLE OUTPUT ── */
+    .sample-wrap {
+      background: linear-gradient(180deg, rgba(15,15,26,.5) 0%, var(--bg) 100%);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    }
+    .sample-tabs {
+      display: flex; gap: .6rem; margin-bottom: 1.5rem; flex-wrap: wrap;
+    }
+    .sample-tab {
+      padding: .45rem 1.1rem; border-radius: 8px; cursor: pointer;
+      font-size: .82rem; font-weight: 700; border: 1px solid var(--border);
+      background: var(--card); color: var(--muted); transition: all .2s;
+      font-family: 'Courier New', monospace;
+    }
+    .sample-tab.active { background: var(--gold-dim); border-color: var(--border-gold); color: var(--gold); }
+    .sample-panel { display: none; }
+    .sample-panel.active { display: block; }
+
+    .chat-window {
+      background: #060610; border: 1px solid rgba(255,255,255,.09);
+      border-radius: 14px; overflow: hidden;
+    }
+    .chat-bar {
+      display: flex; align-items: center; gap: .5rem; padding: .75rem 1.1rem;
+      background: rgba(255,255,255,.03); border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .c-dot { width: 11px; height: 11px; border-radius: 50%; }
+    .c-dot.r { background: #ff5f56; } .c-dot.y { background: #ffbd2e; } .c-dot.g { background: #27c93f; }
+    .chat-title { margin-left: auto; font-size: .7rem; font-family: 'Courier New', monospace; color: var(--faint); }
+
+    .chat-body { padding: 1.5rem 1.75rem; display: flex; flex-direction: column; gap: 1rem; }
+
+    .chat-msg { display: flex; gap: .85rem; align-items: flex-start; }
+    .chat-avatar {
+      width: 32px; height: 32px; border-radius: 8px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .8rem; font-weight: 800;
+    }
+    .chat-avatar.you { background: var(--gold-dim); color: var(--gold); border: 1px solid var(--border-gold); }
+    .chat-avatar.ai { background: var(--purple-dim); color: var(--purple-light); border: 1px solid rgba(124,58,237,.3); }
+
+    .chat-bubble { flex: 1; }
+    .chat-sender { font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin-bottom: .35rem; }
+    .chat-text { font-size: .87rem; line-height: 1.7; color: #c0c0e0; }
+    .chat-text strong { color: var(--text); }
+    .chat-text .gold { color: var(--gold); }
+    .chat-text .green { color: var(--green); }
+    .chat-text .red { color: var(--red); }
+    .chat-text .muted { color: var(--muted); }
+    .chat-input-row {
+      display: flex; align-items: center; gap: .75rem;
+      padding: .9rem 1.25rem; background: rgba(255,255,255,.02);
+      border-top: 1px solid rgba(255,255,255,.06);
+      font-family: 'Courier New', monospace; font-size: .85rem; color: var(--faint);
+    }
+    .chat-prompt-icon { color: var(--gold); }
+
+    .sample-caption {
+      margin-top: 1.25rem; font-size: .88rem; color: var(--muted);
+      line-height: 1.7; padding: 1rem 1.25rem;
+      background: var(--card); border-radius: 10px;
+      border-left: 3px solid var(--gold);
+    }
+
+    /* ── POSSIBILITIES ── */
+    .poss-grid-2 {
+      display: grid; grid-template-columns: repeat(2,1fr);
+      gap: 1.25rem; margin-top: 2.5rem;
+    }
+    .poss-card-2 {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 18px; padding: 2rem; position: relative; overflow: hidden;
+      transition: transform .2s, border-color .3s;
+    }
+    .poss-card-2:hover { transform: translateY(-4px); border-color: var(--border-gold); }
+    .poss-card-2::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--gold), transparent); }
+    .poss-icon-2 { font-size: 2rem; margin-bottom: .9rem; display: block; }
+    .poss-card-2 h3 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+    .poss-card-2 p { font-size: .87rem; color: var(--muted); line-height: 1.65; }
+
+    @media (max-width: 768px) {
+      .poss-grid-2 { grid-template-columns: 1fr; }
+      .sample-tabs { gap: .4rem; }
+    }
   </style>
 </head>
 <body>
@@ -584,7 +662,7 @@
   <div class="orb-1"></div>
   <div class="orb-2"></div>
   <div class="hero-badge fu"><div class="badge-dot"></div>Business Brain Command Pack — Free</div>
-  <h1 class="fu fu1">6 Commands.<br/><span class="text-gold">Your Whole Business Runs.</span></h1>
+  <h1 class="fu fu1">6 Commands.<br><span class="text-green">Your Whole Business Runs.</span></h1>
   <p class="hero-sub fu fu2">
     Type one slash command. Claude reads your business files, drafts your replies,
     classifies your messages, logs your clients — and tells you exactly what to do next.
@@ -599,25 +677,25 @@
     <span class="cmd-pill">/route-offer</span>
   </div>
   <div class="hero-ctas fu fu4">
-    <a class="btn btn-gold" href="#install">Install Free — 60 Seconds</a>
+    <a class="btn btn-green" href="#install">Install Free — 60 Seconds</a>
     <a class="btn btn-outline" href="#commands">See All 6 Commands</a>
   </div>
   <div class="stats-bar fu fu4">
     <div class="stat-item">
       <div class="stat-num">6</div>
-      <div class="stat-label">Built-In<br/>Commands</div>
+      <div class="stat-label">Built-In<br>Commands</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">60s</div>
-      <div class="stat-label">To Install<br/>&amp; Start</div>
+      <div class="stat-label">To Install<br>&amp; Start</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">0</div>
-      <div class="stat-label">Coding<br/>Required</div>
+      <div class="stat-label">Coding<br>Required</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">∞</div>
-      <div class="stat-label">Hours Saved<br/>Per Week</div>
+      <div class="stat-label">Hours Saved<br>Per Week</div>
     </div>
   </div>
 </section>
@@ -753,6 +831,173 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── SAMPLE OUTPUT ── -->
+<div class="sample-wrap">
+  <section class="section" id="sample-output">
+    <div class="eyebrow">See It In Action</div>
+    <h2>This is what you actually get.</h2>
+    <p class="section-sub">Real sample output from three commands — so you know exactly what lands in your inbox every time you run one.</p>
+
+    <div class="sample-tabs" style="margin-top:2rem;">
+      <button class="sample-tab active" onclick="switchSample('priorities')">/daily-priorities</button>
+      <button class="sample-tab"        onclick="switchSample('capture')"  >/capture-message</button>
+      <button class="sample-tab"        onclick="switchSample('update')"   >/client-update</button>
+    </div>
+
+    <div id="s-priorities" class="sample-panel active">
+      <div class="chat-window">
+        <div class="chat-bar">
+          <span class="c-dot r"></span><span class="c-dot y"></span><span class="c-dot g"></span>
+          <span class="chat-title">Claude Code — /daily-priorities</span>
+        </div>
+        <div class="chat-body">
+          <div class="chat-msg">
+            <div class="chat-avatar you">Y</div>
+            <div class="chat-bubble">
+              <div class="chat-sender">You</div>
+              <div class="chat-text"><span class="gold">/daily-priorities</span></div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="chat-avatar ai">AI</div>
+            <div class="chat-bubble">
+              <div class="chat-sender">Claude</div>
+              <div class="chat-text">
+                <strong>Today's Action Board — June 17</strong><br><br>
+                <span class="green">🔥 DO NOW</span><br>
+                <strong>1. Marcus — Meta Ads Setup due Jun 20</strong> · Campaign is live but pixel not verified. Confirm conversion event before billing.<br>
+                <strong>2. Sarah — Content Package</strong> · Story set outstanding. Client DM'd this morning asking for update.<br><br>
+                <span class="gold">📨 FOLLOW UP</span><br>
+                <strong>3. Jordan (warm lead)</strong> · Proposal sent Jun 15. No reply. 2-day window → send a short check-in today.<br>
+                <strong>4. Amanda / referral</strong> · Said "I'll circle back next week." It's been 10 days. Worth a nudge.<br><br>
+                <span class="muted">💡 MONEY MOVE: Sarah's retainer Month 2 starts Jul 1. Confirm renewal in today's reply — don't wait.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-row">
+          <span class="chat-prompt-icon">›</span> Type a follow-up or run your next command...
+        </div>
+      </div>
+      <div class="sample-caption">Claude reads every client file and lead note to build this — ranked by urgency and revenue impact. You get this in about 15 seconds, before you've touched your inbox.</div>
+    </div>
+
+    <div id="s-capture" class="sample-panel">
+      <div class="chat-window">
+        <div class="chat-bar">
+          <span class="c-dot r"></span><span class="c-dot y"></span><span class="c-dot g"></span>
+          <span class="chat-title">Claude Code — /capture-message</span>
+        </div>
+        <div class="chat-body">
+          <div class="chat-msg">
+            <div class="chat-avatar you">Y</div>
+            <div class="chat-bubble">
+              <div class="chat-sender">You</div>
+              <div class="chat-text"><span class="gold">/capture-message</span> "Hey! I found you through Instagram. Do you do social media for restaurants? We have 3 locations and want to grow our following."</div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="chat-avatar ai">AI</div>
+            <div class="chat-bubble">
+              <div class="chat-sender">Claude</div>
+              <div class="chat-text">
+                <strong>Message Classification</strong><br>
+                Type: <span class="green">Warm inbound lead</span> · Category: Social media management inquiry<br>
+                Budget mentioned: <span class="red">No</span> · Scope: Multi-location (3) · Source: Instagram<br><br>
+                <strong>Flags:</strong> Multi-location may push this into Growth Retainer territory ($1,495/mo). Confirm scope before quoting.<br><br>
+                <strong>Draft Reply:</strong><br>
+                <span class="muted">Hey! Yes, absolutely — social media for restaurants is exactly what I do. Three locations is actually a great setup for the kind of strategy I build. Before I send you info on what I offer, quick question: are you looking for content creation, ads, or both?</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-row">
+          <span class="chat-prompt-icon">›</span> Approve, edit, or ask for a different angle...
+        </div>
+      </div>
+      <div class="sample-caption">Any message, any platform. Claude classifies it, flags what matters, and drafts your reply in your voice — ready to review and send in under 30 seconds.</div>
+    </div>
+
+    <div id="s-update" class="sample-panel">
+      <div class="chat-window">
+        <div class="chat-bar">
+          <span class="c-dot r"></span><span class="c-dot y"></span><span class="c-dot g"></span>
+          <span class="chat-title">Claude Code — /client-update</span>
+        </div>
+        <div class="chat-body">
+          <div class="chat-msg">
+            <div class="chat-avatar you">Y</div>
+            <div class="chat-bubble">
+              <div class="chat-sender">You</div>
+              <div class="chat-text"><span class="gold">/client-update</span> Marcus called — wants to add a retargeting campaign to the package. Said he has a $500/mo budget. I said I'd look into it. Also pushed his check-in call to next Thursday.</div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="chat-avatar ai">AI</div>
+            <div class="chat-bubble">
+              <div class="chat-sender">Claude</div>
+              <div class="chat-text">
+                <strong>Client Log Updated — Marcus</strong><br>
+                Date: Jun 17 · Type: Call<br><br>
+                <span class="red">⚠️ Scope Flag:</span> Retargeting campaign is outside current package scope. Do not begin work until you've confirmed additional payment and updated the agreement.<br><br>
+                <strong>Check-in moved:</strong> Next Thursday — calendar reminder suggested.<br><br>
+                <strong>Draft Follow-Up:</strong><br>
+                <span class="muted">Marcus — thanks for the call. I'll put together a quick scope note on the retargeting piece and what that would look like at your $500/mo budget. I'll send that over by Friday, and we'll go from there at our Thursday check-in.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-row">
+          <span class="chat-prompt-icon">›</span> Send the reply or ask Claude to adjust tone...
+        </div>
+      </div>
+      <div class="sample-caption">Paste your rough notes from any call or client interaction. Claude logs it, flags scope risk, and drafts the follow-up message — professionally worded and ready to send.</div>
+    </div>
+  </section>
+</div>
+
+<script>
+function switchSample(name) {
+  document.querySelectorAll('.sample-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.sample-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('s-' + name).classList.add('active');
+  const idx = { priorities: 0, capture: 1, update: 2 };
+  document.querySelectorAll('.sample-tab')[idx[name]].classList.add('active');
+}
+</script>
+
+<!-- ── POSSIBILITIES ── -->
+<section class="section" id="possibilities">
+  <div class="eyebrow">What This Unlocks</div>
+  <h2>The possibilities once you're running on commands.</h2>
+  <p class="section-sub">Once your Brain is built and your commands are installed, the way you work changes. Here's what becomes possible.</p>
+
+  <div class="poss-grid-2">
+    <div class="poss-card-2">
+      <span class="poss-icon-2">⏱️</span>
+      <h3>Your Admin Time Drops to Under an Hour a Day</h3>
+      <p>The work that used to take half your day — classifying messages, writing follow-ups, logging client notes, figuring out what to do first — gets handled by one command each. You stay in control, but stop doing it manually.</p>
+    </div>
+    <div class="poss-card-2">
+      <span class="poss-icon-2">💬</span>
+      <h3>Every Client Reply Goes Out Faster</h3>
+      <p>No more staring at an inbox trying to figure out how to word something. Paste the message, run the command, get a draft that sounds like you with the right context already pulled in. Review and send.</p>
+    </div>
+    <div class="poss-card-2">
+      <span class="poss-icon-2">💰</span>
+      <h3>Leads Stop Falling Through</h3>
+      <p>When a lead comes in and you're busy, you used to let it sit. Now you run /capture-message in 30 seconds, get a draft reply, and send it before the moment passes. That's revenue you used to lose.</p>
+    </div>
+    <div class="poss-card-2">
+      <span class="poss-icon-2">🧠</span>
+      <h3>Claude Picks Up Where You Left Off — Every Day</h3>
+      <p>/save-session at the end of every day means tomorrow starts with full context. Your active clients, your open leads, what's due, what's waiting on who — all loaded before you type a single thing.</p>
+    </div>
   </div>
 </section>
 
@@ -900,9 +1145,9 @@
         <span class="terminal-title">Terminal</span>
       </div>
       <div class="terminal-body">
-        <span class="t-comment"># Navigate to your business brain folder first</span><br/>
-        <span class="t-prompt">$ </span><span class="t-gold">cd</span> ~/my-business-brain<br/><br/>
-        <span class="t-comment"># Run the install script</span><br/>
+        <span class="t-comment"># Navigate to your business brain folder first</span><br>
+        <span class="t-prompt">$ </span><span class="t-gold">cd</span> ~/my-business-brain<br><br>
+        <span class="t-comment"># Run the install script</span><br>
         <span class="t-prompt">$ </span><span class="t-gold">curl</span> -fsSL https://raw.githubusercontent.com/jazzy15j/business-brain-command-pack/main/install.sh | <span class="t-gold">bash</span>
       </div>
     </div>
@@ -914,9 +1159,9 @@
         <span class="terminal-title">PowerShell</span>
       </div>
       <div class="terminal-body">
-        <span class="t-comment"># Navigate to your business brain folder first</span><br/>
-        <span class="t-prompt">PS&gt; </span><span class="t-gold">cd</span> C:\Users\You\my-business-brain<br/><br/>
-        <span class="t-comment"># Run the install script</span><br/>
+        <span class="t-comment"># Navigate to your business brain folder first</span><br>
+        <span class="t-prompt">PS&gt; </span><span class="t-gold">cd</span> C:\Users\You\my-business-brain<br><br>
+        <span class="t-comment"># Run the install script</span><br>
         <span class="t-prompt">PS&gt; </span><span class="t-gold">iwr</span> -useb https://raw.githubusercontent.com/jazzy15j/business-brain-command-pack/main/install.ps1 | <span class="t-gold">iex</span>
       </div>
     </div>
@@ -928,10 +1173,10 @@
         <span class="terminal-title">Claude Code</span>
       </div>
       <div class="terminal-body">
-        <span class="t-prompt">$ </span><span class="t-gold">claude</span><br/><br/>
-        <span class="t-comment"># Type your first command — Claude already knows your business</span><br/>
-        <span class="t-prompt">&gt; </span><span class="t-gold">/daily-priorities</span><br/><br/>
-        <span style="color:#9090b8;">Reading your brain files... Building your morning action board...<br/>Here's exactly what to do today:</span>
+        <span class="t-prompt">$ </span><span class="t-gold">claude</span><br><br>
+        <span class="t-comment"># Type your first command — Claude already knows your business</span><br>
+        <span class="t-prompt">&gt; </span><span class="t-gold">/daily-priorities</span><br><br>
+        <span style="color:#9090b8;">Reading your brain files... Building your morning action board...<br>Here's exactly what to do today:</span>
       </div>
     </div>
   </div>
@@ -943,10 +1188,10 @@
 <section class="section" style="padding-top:3rem; padding-bottom:3rem;">
   <div class="cta-card">
     <div class="eyebrow">Ready?</div>
-    <h2>Run your business<br/><span class="text-gold">from one command.</span></h2>
+    <h2>Run your business<br><span class="text-green">from one command.</span></h2>
     <p>Free to install. Runs in 60 seconds. Built for service-based business owners — not developers. If you haven't built your Business Brain yet, start there first. Then come back and these 6 commands are ready to go.</p>
     <div class="cta-btns">
-      <a class="btn btn-gold" href="#install">Install the Command Pack — Free</a>
+      <a class="btn btn-green" href="#install">Install the Command Pack — Free</a>
       <a class="btn btn-outline" href="brain-guide.html">Build Your Business Brain First →</a>
     </div>
   </div>
@@ -963,12 +1208,11 @@
     <div class="footer-copy">Made by Jasmine &nbsp;·&nbsp; © 2025 JDesigns Strategist LLC</div>
   </div>
   <div class="footer-links">
-    <a href="https://jdesigns.info" target="_blank">jdesigns.info</a>
+    <a href="https://jdesigns.info/" target="_blank">jdesigns.info</a>
     <a href="https://fiverr.com/jazz96designs" target="_blank">fiverr.com/jazz96designs</a>
     <a href="brain-guide.html">Build Your Business Brain</a>
     <a href="#install">Install the Command Pack</a>
   </div>
 </footer>
 
-</body>
-</html>
+</body></html>
